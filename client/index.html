@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>色彩记忆游戏</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 色彩记忆游戏</h1>
+    
+    <div class="scores">
+      <div class="score-item">
+        <span class="score-label">当前关卡</span>
+        <span id="current-level" class="score-value">0</span>
+      </div>
+      <div class="score-item">
+        <span class="score-label">最高记录</span>
+        <span id="high-score" class="score-value">0</span>
+      </div>
+    </div>
+
+    <div id="game-status" class="game-status">点击开始按钮开始游戏</div>
+
+    <div class="game-board">
+      <button class="color-btn red" data-color="red"></button>
+      <button class="color-btn yellow" data-color="yellow"></button>
+      <button class="color-btn blue" data-color="blue"></button>
+      <button class="color-btn green" data-color="green"></button>
+    </div>
+
+    <div class="controls">
+      <button id="start-btn" class="start-btn">开始游戏</button>
+    </div>
+
+    <div class="instructions">
+      <h3>游戏规则</h3>
+      <p>1. 观察亮起的按钮顺序</p>
+      <p>2. 按相同顺序点击按钮</p>
+      <p>3. 每过一关，序列增加一个</p>
+      <p>4. 按错一次即游戏结束</p>
+    </div>
+  </div>
+
+  <script type="module" src="game.ts"></script>
+</body>
+</html>
